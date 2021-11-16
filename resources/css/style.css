@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  font-size: 20px;
+  color: #000;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.row {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.container {
+  overflow-x: hidden;
+}
+
+.main {
+  background-image: url(/resources/img/background.png);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.logo {
+  width: auto;
+  height: 50px;
+}
+
+.cart {
+  width: auto;
+  height: 30px;
+}
+.navbar ul {
+  position: relative;
+  left: -180px;
+}
+.navbar ul li {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #0e0d0d;
+  position: relative;
+  top: 20px;
+  font-size: 95%;
+  font-weight: 500;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.info {
+  position: relative;
+  top: 140px;
+  left: 180px;
+}
+
+.info .btn {
+  text-decoration: none;
+  background: linear-gradient(45deg, #87adfe, #ff77cd);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #fff;
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+  font-size: 90%;
+}
+
+.info h1 {
+  font-weight: 300;
+  margin: 20px 0;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.arrow-icon {
+  margin-top: 30px;
+  display: flex;
+}
+
+.arrow-icon img {
+  width: 40px;
+  margin-right: 30px;
+}
+
+.feature-img {
+  height: 80vh;
+  position: absolute;
+  bottom: -200px;
+  right: 300px;
+}
+
+.social {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -330px;
+  bottom: 20px;
+}
+
+.social a {
+  text-decoration: none;
+  color: #6a7199;
+  font-size: 14px;
+  padding-right: 40px;
+}
