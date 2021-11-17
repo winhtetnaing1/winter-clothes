@@ -1,0 +1,38 @@
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .left-container {
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+  }
+
+  .right-container {
+    width: 100%;
+  }
+
+  .content {
+    position: relative;
+    width: 100%;
+  }
+
+  .content h1 {
+    font-size: 30px;
+    line-height: 130%;
+  }
+  .content p {
+    font-size: 15px;
+  }
+  .content a {
+    font-size: 15px;
+  }
+  .slider {
+    height: auto;
+  }
+  .arrow {
+    width: 30%;
+  }
+}

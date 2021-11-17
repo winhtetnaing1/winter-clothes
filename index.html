@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>van hauser</title>
+    <link rel="stylesheet" href="./vendors/css/normalize.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/query.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left-container">
+            <img class="logo" src="./resources/img/logo.png">
+
+            <div class="content">
+                <h1>Add plants to your living space</h1>
+                <p>plants are an inexpensive means to accessonzing your space and adding color and texture</p>
+                <a href="">learn more</a>
+            </div>
+        </div>
+        <div class="right-container">
+            <img id="slider" class="slider" src="./resources/img/pic-1.jpg" alt="">
+            <div class="slide-container">
+                <h2>Where can i find ideas for small rooms?</h2>
+                <p>they can absorb pollutants and remove harmful gases from air.No home should be without these
+                    wondorful ground Designing small rooms comes with a completey different challenge</p>
+                <div class="arrow">
+                    <img src="./resources/img/back.png" id="back" alt="">
+                    <div></div>
+                    <img src="./resources/img/next.png" id="next" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        const slide = document.getElementById("slider")
+        const back = document.getElementById("back")
+        const next = document.getElementById("next")
+
+        const sliders = [
+            "./resources/img/pic-1.jpg",
+            "./resources/img/pic-2.jpg",
+            "./resources/img/pic-3.jpg",
+            "./resources/img/pic-4.jpg",
+        ]
+
+        let i = 0;
+
+        next.onclick = function () {
+            if (i < 3) {
+                slide.src = sliders[i + 1]
+                i++;
+            }
+        }
+        back.onclick = function () {
+            if (i > 0) {
+                slide.src = sliders[i - 1]
+                i--;
+            }
+        }
+    </script>
+</body>
+
+</html>
